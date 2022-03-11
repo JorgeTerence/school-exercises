@@ -1,0 +1,74 @@
+@import url('https://fonts.googleapis.com/css2?family=Fira+Mono:wght@400;700&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Noto+Sans:ital,wght@0,400;0,700;1,400;1,700&display=swap');
+
+:root {
+    --bg: hsl(225, 35%, 10%);
+    --dimm: hsl(228, 22%, 23%);
+    --highlight: rgb(49, 223, 136);
+
+    --mono: 'Fira Code', 'Courier New', Courier, monospace;
+    --heading: 'Noto Sans', 'Segoe UI', Tahoma, Verdana, sans-serif;
+    --ui-size: 1rem;
+}
+
+body {
+    background-color: var(--bg);
+    color: white;
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    width: 90vw;
+    margin: auto;
+}
+
+a {
+    text-decoration: dotted;
+    text-decoration-color: var(--highlight);
+    color: var(--highlight);
+    font-size: 18px;
+}
+
+form {
+    display: flex;
+    flex-direction: column;
+    gap: 1.25rem;
+}
+
+form * {
+    font-size: var(--ui-size);
+}
+
+input {
+    background-color: var(--bg);
+    border: 2px solid var(--dimm);
+    border-radius: 3px;
+    padding: .4rem;
+    font-family: var(--mono);
+    color: white;
+}
+
+select {
+    font-family: var(--mono);
+    padding: 4px;
+    color: white;
+    background-color: var(--dimm);
+    border-radius: 5px;
+    border: 1px solid slategrey;
+}
+
+input[type=submit] {
+    background-color: var(--highlight);
+    color: black;
+    border-radius: 5px;
+    border: 0 transparent;
+    padding: 6px;
+    cursor: pointer;
+}
+
+table, tr, td {
+    border: 2px solid var(--dimm);
+    padding: .5rem;
+    border-collapse: collapse;
+    width: 80vw;
+    text-align: center;
+    font-size: var(--ui-size);
+    font-family: var(--mono);
+}

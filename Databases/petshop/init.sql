@@ -1,0 +1,20 @@
+CREATE DATABASE Petshop;
+
+USE Petshop;
+
+CREATE TABLE Users(
+	id INT PRIMARY KEY AUTO_INCREMENT,
+  	name VARCHAR(255) NOT NULL,
+  	email VARCHAR(255) NOT NULL,
+  	uf VARCHAR(2)
+);
+
+CREATE TABLE Pets(
+  	id INT PRIMARY KEY AUTO_INCREMENT,
+		name VARCHAR(127),
+  	species VARCHAR(65),
+  	weight INT,
+  	color VARCHAR(65),
+  	owner_id INT NOT NULL,
+  	FOREIGN KEY (owner_id) REFERENCES Users(id)
+);
