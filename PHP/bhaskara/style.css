@@ -1,0 +1,63 @@
+:root {
+  --bg: hsl(220, 18%, 85%);
+  --bg-alt: hsl(222, 41%, 78%);
+  --hl: hsl(32, 100%, 83%);
+
+  --font-sans: "Inter", sans-serif;
+  --font-serif: "Merriweather", serif;
+}
+
+body {
+  background-color: var(--bg);
+  font-family: var(--font-sans);
+}
+
+.card {
+  margin: 1rem;
+  align-items: center;
+  padding: 1rem;
+  width: max-content;
+  background-color: var(--bg-alt);
+  border: 1px solid gray;
+  box-shadow: 2px 2px 4px rgba(0, 0, 0, 0.2);
+  border-radius: 3px;
+}
+
+.field {
+  display: flex;
+  flex-direction: column;
+  margin-bottom: 5px;
+}
+
+label::after {
+    content: ":";
+}
+
+input {
+  border: 1px solid gray;
+  border-radius: 4px;
+  width: 200px;
+}
+
+button {
+  display: inline-block;
+  border-radius: 3px;
+  border: 1px solid rgb(136, 136, 136);
+  background-color: var(--hl);
+}
+
+span:not(:first-child) {
+  margin-left: 1rem;
+}
+
+span {
+  font-family: var(--font-serif);
+  border: 1px sold gray;
+  border-radius: 4px;
+  background-color: var(--hl);
+  padding: 6px;
+}
+
+h1 {
+  font-family: var(--font-serif);
+}
